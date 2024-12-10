@@ -55,25 +55,30 @@ button:focus {
 .loader {
   text-align: center;
 }
+
 .gallery {
   display: flex;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
   flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
+  gap: 24px;
+  justify-content: flex-start;
 }
+
 .gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+  text-decoration: none;
   border: 1px solid #808080;
-  flex-basis: calc(33.333% -24px);
+  box-sizing: border-box;
 }
-.gallery-image {
+
+.gallery-item img {
   width: 100%;
   height: auto;
   display: block;
-  cursor: pointer;
+}
+
+.info {
+  padding: 8px;
+  font-size: 14px;
 }
 
 a {
